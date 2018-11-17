@@ -1,13 +1,10 @@
 <template>
   <div>
-  <van-row gutter="20">
-  <van-col span="8">
-   
-  <van-button type="primary">主要按钮</van-button>
-  </van-col>
-  <van-col span="8" class="buttondddd">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-</van-row>
+   <van-row>
+      <van-col span="8">span: 8</van-col>
+      <van-col span="8">span: 8</van-col>
+      <van-col span="8">span: 8</van-col>
+   </van-row>
   </div>
 </template>
 <script>
@@ -18,6 +15,17 @@ export default {
     return {
       activeKey: 0
     };
+  },
+  created(){
+    // 1.一种使用方法    2.第二种是使用mapActions...
+    // 使用vuex
+    let params={
+      A:'222',
+      B:'3333'
+    };
+    // 触发方法
+    this.$store.dispatch('changeParmas',params)
+
   },
   methods: {
     handleButton(key) {

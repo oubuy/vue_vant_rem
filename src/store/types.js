@@ -1,0 +1,1 @@
+export const RUTER_PARAMS='RUTER_PARAMS'
