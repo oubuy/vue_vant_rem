@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-      <!-- 引用了iview布局 只是给个例子如何使用vuex  后台管理系统-->
+      <!-- 引用了iview布局 只是给个例子如何使用vuex  后台管理系统 这个是主页面，移动端不用使用这个页面-->
         <!-- <Layout>
             <Header>
                 <Menu mode="horizontal" theme="dark" active-name="1">

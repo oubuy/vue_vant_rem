@@ -1,0 +1,12 @@
+.entry{
+    .searchWrapper{
+        display: flex;
+        justify-content:space-between;
+        .selectbox{
+
+        }
+        .inputbox{
+            flex:1;
+        }
+    }
+}

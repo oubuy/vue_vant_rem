@@ -2,7 +2,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import HelloWorld from '@/components/HelloWorld'
+// import HelloWorld from '@/components/HelloWorld'
+import home from '@/views/home'
+import address from '@/views/address'
 
 
 Vue.use(Router)
@@ -11,11 +13,20 @@ const router= new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
+      name: 'home',
       meta:{
         title:'首页'
       },
-      component: HelloWorld
+      component: home,
+    },
+    {//勾选地址页
+      path:'/address',
+      name:'address',
+      meta:{
+        title:'地址'
+      },
+      component:address
+
     }
   ]
 });

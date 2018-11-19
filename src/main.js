@@ -5,9 +5,11 @@ import App from './App'
 import router from './router';
 import store from './store';//vuex
 
-
+// 引入vant UI插件
 import Vant from 'vant';
 import 'vant/lib/vant-css/index.css';
+
+// iview等等UI插件也是可以在这里全局引入
 
 
 import './assets/css/index.scss';//引入样式
