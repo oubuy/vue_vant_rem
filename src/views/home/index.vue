@@ -4,7 +4,8 @@
         <div class="searchWrapper">
             <div class="selectbox">
                 <router-link :to="{path:'/address'}" tag="div">
-                     首页
+                    <span class="label">深圳</span>
+                    <i class="iconfont">&#xe62d;</i>
                 </router-link>
             </div>
             <div class="inputbox">
