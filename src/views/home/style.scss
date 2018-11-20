@@ -2,13 +2,13 @@
     .searchWrapper{
         display: flex;
         justify-content:space-between;
-        // background: rgba(7, 139, 243, .2);
         width: 100%;
         position: fixed;
         z-index: 999;
         height: 40px;
         .selectbox{
             min-width: 90px;
+            background: rgba(7, 139, 243, .2);
                .label{
                    font-size: 13px;
                }

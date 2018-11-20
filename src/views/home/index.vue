@@ -14,20 +14,30 @@
                     placeholder="请输入搜索关键词"
                     show-action
                     @search="onSearch"
+                    style="background:rgba(7, 139, 243, .2)"
                     >
-                    <div slot="action" @click="onSearch">搜索</div>
+                    <div slot="action" style="color:#fff" @click="onSearch">搜索</div>
                 </van-search>
             </div>
         </div>
+        <!-- 轮播图 -->
+        <v-banner></v-banner>
 
     </div>
 </template>
 <script>
+import vBanner from './banner.vue';
+
+
 export default {
     data(){
         return{
             searchValue:'',
         }
+    },
+    components:{
+        vBanner
+
     },
     methods:{
         onSearch(){
