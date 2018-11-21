@@ -22,11 +22,12 @@
         </div>
         <!-- 轮播图 -->
         <v-banner></v-banner>
-
+        <sub-nav></sub-nav>
     </div>
 </template>
 <script>
 import vBanner from './banner.vue';
+import subNav from '@/views/components/subnav';
 
 
 export default {
@@ -36,7 +37,8 @@ export default {
         }
     },
     components:{
-        vBanner
+        vBanner,
+        subNav
 
     },
     methods:{

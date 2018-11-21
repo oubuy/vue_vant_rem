@@ -12,7 +12,7 @@
 <script>
 import one from '@/assets/image/Lighthouse.jpg'
 import two from '../../assets/image/Penguins.jpg'
-// import three from "../../assets/image/timg.jpg"
+import three from "../../assets/image/timg.jpg"
 import four from "../../assets/image/Tulips.jpg"
 export default {
   data() {
