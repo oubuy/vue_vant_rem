@@ -23,30 +23,34 @@
         <!-- 轮播图 -->
         <v-banner></v-banner>
         <sub-nav></sub-nav>
+        <todayOrder></todayOrder>
     </div>
 </template>
 <script>
 import vBanner from './banner.vue';
 import subNav from '@/views/components/subnav';
+import todayOrder from './today-order.vue';
+
 
 
 export default {
     data(){
         return{
-            searchValue:'',
+            searchValue:''
         }
     },
     components:{
         vBanner,
-        subNav
+        subNav,
+        todayOrder
 
     },
     methods:{
         onSearch(){
             console.log('搜索')
         },
-        onSearch(data){
-            console.log(data,'回车键')
+        onSearch(data111){
+            console.log(data111,'回车键')
         }
     }
 }

@@ -5,6 +5,7 @@ import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import home from '@/views/home'
 import address from '@/views/address'
+import serivece from '@/views/serivece'
 
 
 Vue.use(Router)
@@ -27,6 +28,14 @@ const router= new Router({
       },
       component:address
 
+    },
+    {
+      path:'/serivece',
+      name:'serivece',
+      meta:{
+        title:'nav导航'
+      },
+      component:serivece
     }
   ]
 });
