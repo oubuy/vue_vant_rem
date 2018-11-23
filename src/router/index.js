@@ -6,6 +6,7 @@ import Router from 'vue-router'
 import home from '@/views/home'
 import address from '@/views/address'
 import serivece from '@/views/serivece'
+import menu from '@/views/menu/menu.vue'
 
 
 Vue.use(Router)
@@ -36,7 +37,15 @@ const router= new Router({
         title:'nav导航'
       },
       component:serivece
-    }
+    },
+    // {//底部菜单导航
+    //   path:'/menu',
+    //   name:'menu',
+    //   meta:{
+    //     title:'菜单导航'
+    //   },
+    //   component:menu
+    // }
   ]
 });
 
