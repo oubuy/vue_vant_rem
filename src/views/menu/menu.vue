@@ -1,5 +1,9 @@
 <template>
-    <div class="menu">菜单导航</div>
+    <div class="menu">
+        <div>
+           菜单777777777
+        </div>
+    </div>
 </template>
 <script>
 export default {
@@ -13,10 +17,6 @@ export default {
 
 
 <style lang="scss" scoped>
-.menu{
-    position: fixed;
-    bottom:0;
-    right:0;
-}
+
 </style>
 
