@@ -15,7 +15,7 @@ import 'vant/lib/vant-css/index.css';
 import './assets/css/index.scss';//引入样式
 import './assets/js/screen-adaptation';//px转为rem
 
-import './assets/fonts/fonts/style.css'
+import './assets/fonts/fonts/iconfont.css'//引入字体图标
 
  
 Vue.use(Vant);

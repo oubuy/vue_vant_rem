@@ -1,8 +1,13 @@
 <template>
     <div class="menu">
-        <div>
-           菜单777777777
-        </div>
+        <ul class="list">
+           <li class="list-item">
+              <router-link tag="div" :to="{path:'/home'}">
+                <span></span>
+                <p>首页</p>
+              </router-link>
+           </li>
+        </ul>
     </div>
 </template>
 <script>
@@ -17,6 +22,12 @@ export default {
 
 
 <style lang="scss" scoped>
-
+.menu{
+    position: fixed;
+    bottom:0;
+    right:0;
+    left:0;
+    z-index:1000;
+}
 </style>
 
