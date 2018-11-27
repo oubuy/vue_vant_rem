@@ -6,7 +6,7 @@ import Router from 'vue-router'
 import home from '@/views/home'
 import address from '@/views/address'
 import serivece from '@/views/serivece'
-import menu from '@/views/menu/menu.vue'
+import classify from '@/views/classify/classify.vue'
 
 
 Vue.use(Router)
@@ -15,6 +15,14 @@ const router= new Router({
   routes: [
     {
       path: '/',
+      name: 'home',
+      meta:{
+        title:'首页'
+      },
+      component: home,
+    },
+    {
+      path: '/home',
       name: 'home',
       meta:{
         title:'首页'
@@ -38,14 +46,14 @@ const router= new Router({
       },
       component:serivece
     },
-    // {//底部菜单导航
-    //   path:'/menu',
-    //   name:'menu',
-    //   meta:{
-    //     title:'菜单导航'
-    //   },
-    //   component:menu
-    // }
+    {
+      path:'/classify',
+      name:'classify',
+      meta:{
+        title:'分类'
+      },
+      component:classify
+    }
   ]
 });
 

@@ -3,31 +3,64 @@
         <ul class="list">
            <li class="list-item">
               <router-link tag="div" :to="{path:'/home'}">
-                <span></span>
-                <p>首页</p>
+                <span class="iconfont icon">&#xe612;</span>
+                <p class="label">首页</p>
               </router-link>
+           </li>
+           <li class="list-item">
+               <router-link tag="div" :to="{path:'/classify'}">
+                  <span class="iconfont icon">&#xe652;</span>
+                  <p class="label">分类</p>
+               </router-link>
+           </li>
+           <li class="list-item">
+               <router-link tag="div" :to="{path:'/classify'}">
+                    <span class="iconfont icon">&#xe615;</span>
+                    <p class="label">我的</p>
+               </router-link>
            </li>
         </ul>
     </div>
 </template>
 <script>
 export default {
-    data(){
-        return{
-
-        }
-    }
-}
+  data() {
+    return {};
+  }
+};
 </script>
 
 
 <style lang="scss" scoped>
-.menu{
-    position: fixed;
-    bottom:0;
-    right:0;
-    left:0;
-    z-index:1000;
+.menu {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  border-top:0.5px solid #ddd;
+  z-index: 1000;
+  .list {
+    display: flex;
+    // justify-content: space-around;
+    padding:8px 0;
+    .list-item{
+      flex:1;
+    }
+    .icon {
+      font-size: 21px;
+      color: #999faa;
+      display: block;
+      width: 21px;
+      height: 21px;
+      margin: auto;
+    }
+    .label{
+        font-size: 10px;
+        color: #626b77;
+        margin-top: 5px;
+    }
+  }
 }
 </style>
 
