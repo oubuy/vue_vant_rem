@@ -8,52 +8,67 @@ import address from '@/views/address'
 import serivece from '@/views/serivece'
 import classify from '@/views/classify/classify.vue'
 
+import layout from '@/views/layout/index'//这个laout是布局页面用的
+import mine from '@/views/mine/mine.vue'
+
 
 Vue.use(Router)
 
-const router= new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      meta:{
-        title:'首页'
-      },
-      component: home,
+      component: layout,
+      redirect:'/home',
+      children: [
+        {
+          path: '/home',
+          name: 'home',
+          meta: {
+            title: '首页'
+          },
+          component: home,
+        },
+        {
+          path: '/classify',
+          name: 'classify',
+          meta: {
+            title: '分类'
+          },
+          component: classify
+        },
+        {
+          path:'/mine',
+          name:'mine',
+          meta:{
+            title:'我的'
+          },
+          component:mine
+        }
+      ]
+
     },
-    {
-      path: '/home',
-      name: 'home',
-      meta:{
-        title:'首页'
-      },
-      component: home,
-    },
+
+
+
     {//勾选地址页
-      path:'/address',
-      name:'address',
-      meta:{
-        title:'地址'
+      path: '/address',
+      name: 'address',
+      meta: {
+        title: '地址'
       },
-      component:address
+      component: address
 
     },
     {
-      path:'/serivece',
-      name:'serivece',
-      meta:{
-        title:'nav导航'
+      path: '/serivece',
+      name: 'serivece',
+      meta: {
+        title: 'nav导航'
       },
-      component:serivece
+      component: serivece
     },
-    {
-      path:'/classify',
-      name:'classify',
-      meta:{
-        title:'分类'
-      },
-      component:classify
-    }
+
   ]
 });
 
@@ -85,11 +100,11 @@ const router= new Router({
 // })
 
 // 登录前判断或者token
-router.beforeEach((to,from,next)=>{
-   if(to.meta.title){
-     document.title=to.meta.title;
-   }
-   next();
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = to.meta.title;
+  }
+  next();
 });
 
 export default router;

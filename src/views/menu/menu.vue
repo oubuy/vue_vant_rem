@@ -14,7 +14,7 @@
                </router-link>
            </li>
            <li class="list-item">
-               <router-link tag="div" :to="{path:'/classify'}">
+               <router-link tag="div" to="/mine">
                     <span class="iconfont icon">&#xe615;</span>
                     <p class="label">我的</p>
                </router-link>
@@ -25,7 +25,12 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+        active: '1'
+    };
+  },
+  mounted(){
+      console.log(this.$route,8888888888888888)
   }
 };
 </script>
@@ -61,6 +66,16 @@ export default {
         margin-top: 5px;
     }
   }
+.router-link-exact-active,
+   .router-link-active {//router-link有一个active激活样式
+        .icon {
+          color: #45adff;
+        }
+        .label {
+          color: #45adff;
+        }
+      }
+    
 }
 </style>
 

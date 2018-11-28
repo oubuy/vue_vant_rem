@@ -24,7 +24,7 @@
         <v-banner></v-banner>
         <sub-nav></sub-nav>
         <todayOrder></todayOrder>
-        <v-menu></v-menu>
+        <!-- <v-menu></v-menu> -->
     </div>
 </template>
 <script>
@@ -32,7 +32,7 @@ import vBanner from './banner.vue';
 import subNav from '@/views/components/subnav';
 import todayOrder from './today-order.vue';
 
-import vMenu from '@/views/menu/menu.vue';
+// import vMenu from '@/views/menu/menu.vue';
 
 
 
@@ -46,7 +46,7 @@ export default {
         vBanner,
         subNav,
         todayOrder,
-        vMenu
+        // vMenu
 
     },
     methods:{
