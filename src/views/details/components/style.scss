@@ -1,0 +1,77 @@
+@import '~@/assets/css/mixin.scss';//引入封装共同样式
+.evaluate{//高度是通过评论多少条自动撑开
+  background: #fff;
+  margin-bottom:0.213rem;
+  .infoWrapper{
+  font-size: 0.32rem;
+  padding:0.43rem;
+  border-bottom:0.06rem solid #ddd;
+   .info{
+       @include fj;
+       .lable{
+           font-size:0.35rem;
+           .numm{
+            color: #bbc0cb;
+            font-size: 0.32rem;
+           }
+       }
+       .desc{
+        color: #fc8a04;
+        .name{
+         padding-right: 0.3rem;
+        }
+       }
+   }
+   .search{
+    // flex-start
+       @include fj(flex-start);
+       flex-wrap:wrap;
+       &-item{//&代表上一个class
+           padding:0.313rem;
+           font-size:0.32rem;
+           color: #626b77;
+           background: #e3f6ff;
+           border-radius: 0.6rem;
+           margin:0.21rem 0.4rem 0 0;
+           &.is-active{
+            background: #64cdff;
+            color: #fff;
+           }
+       }
+   }
+  }
+  .listsWrapper{
+    padding: .426667rem /* 16/37.5 */;
+    font-size: .32rem /* 12/37.5 */;
+    .lists{
+        &-item{
+            padding: .213333rem /* 8/37.5 */ 0;
+            border-bottom:0.06rem solid #ddd;
+            &:first-child{
+            //   padding-top:0;
+            }
+            &:last-child{
+                border:0;
+            }
+            .label{
+                @include fj();
+                margin-bottom:0.2rem;
+                .name{
+                    color: #333b46;
+                }
+                .ratelist{
+                //   flex:1;
+                @include fj(flex-end);
+                 .tip{
+                    color: #bbc0cb;
+                    font-size: .32rem /* 12/37.5 */;
+                 }
+                }
+            }
+            .desc{
+                text-align: left;
+            }
+        }
+    }
+  }
+}

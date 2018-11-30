@@ -3,6 +3,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  // color:red;
 }
 //清除浮动
 @mixin clearfix{
@@ -15,3 +16,25 @@
     visibility: hidden
   }
 }
+
+//flex 布局和 子元素 对其方式
+@mixin fj($type: space-between){
+	display: flex;
+	justify-content: $type;
+
+}
+//transform上下左右居中
+@mixin ctt {  
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//字体大小，颜色
+@mixin sc($size, $color){
+	font-size: $size;
+	color: $color;
+}
+
+

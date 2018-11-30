@@ -11,6 +11,8 @@ import classify from '@/views/classify/classify.vue'
 import layout from '@/views/layout/index'//这个laout是布局页面用的
 import mine from '@/views/mine/mine.vue'
 
+import details from '@/views/details/details.vue'
+
 
 Vue.use(Router)
 
@@ -46,7 +48,6 @@ const router = new Router({
           component:mine
         }
       ]
-
     },
 
 
@@ -68,6 +69,14 @@ const router = new Router({
       },
       component: serivece
     },
+    {
+      path:'/details',
+      name:'details',
+      meta:{
+        titel:'详情'
+      },
+      component:details
+    }
 
   ]
 });
