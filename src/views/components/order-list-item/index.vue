@@ -17,7 +17,7 @@
                </div>
             </router-link>
           </li>
-      </ul> -->
+      </ul> --> 
       <van-list
         v-model="loading"
         :finished="finished"
